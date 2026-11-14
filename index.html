@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#09121c"/><meta name="description" content="OMEGA V10 — football research, paper predictions, and honest performance tracking."/>
+<meta name="application-name" content="PRO-PITCH OMEGA"/>
+<link rel="manifest" href="./manifest.webmanifest"/><link rel="icon" type="image/png" sizes="192x192" href="./icons/omega-192.png"/>
+<link rel="apple-touch-icon" href="./icons/omega-192.png"/>
+<title>PRO-PITCH OMEGA V10</title>
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" aria-label="Main navigation">
+  <div class="sidebrand"><span class="brandmark">Ω</span><span><b>PRO-PITCH</b><small>OMEGA / V10</small></span></div>
+  <div class="sidecaption">WORKSPACE</div>
+  <nav id="desktop-nav" class="desktop-nav"></nav>
+  <div class="sidefooter"><span class="statusdot"></span> Research mode<br><span>Not connected to a bookmaker</span></div>
+</aside>
+<div class="workspace">
+<header class="topbar"><div class="mobilebrand"><span class="brandmark">Ω</span><span><b>OMEGA</b><small>V10 RESEARCH</small></span></div><div class="eyebrow desktop-only">FOOTBALL INTELLIGENCE / RESEARCH TERMINAL</div><div class="topactions"><button id="install-app" class="install-btn" hidden>Install app</button><form id="omega-logout" action="/logout" method="post" hidden style="margin:0"><button type="submit" class="install-btn" style="display:block">Lock</button></form><div class="avatar">O</div></div></header>
+<main id="app" tabindex="-1" aria-live="polite"></main>
+</div>
+</div>
+<nav id="bottom-nav" class="bottomnav" aria-label="Bottom navigation"></nav>
+<div id="modal-layer" class="modal-layer" hidden></div>
+<div id="toast" role="status" class="toast" hidden></div>
+<input id="file-input" type="file" accept=".csv,text/csv,.json,application/json" hidden/>
+<script>if(location.protocol==='https:' || ['localhost','127.0.0.1'].includes(location.hostname)){document.getElementById('omega-logout').hidden=false}</script><script src="./data.js"></script><script src="./live-ui.js"></script><script src="./app.js"></script>
+</body></html>
